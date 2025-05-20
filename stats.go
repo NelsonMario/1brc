@@ -1,4 +1,4 @@
-package agg
+package main
 
 type Stats struct {
 	Sum   float64

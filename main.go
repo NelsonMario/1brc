@@ -3,7 +3,6 @@ package main
 import (
 	"bufio"
 	"fmt"
-	"getting-started/agg"
 	"os"
 	"time"
 )
@@ -24,7 +23,7 @@ func main() {
 		lines = append(lines, scanner.Text())
 	}
 
-	var agg agg.Aggregator = agg.NewNaiveAggregator()
+	var agg Aggregator = NewOptAggregator()
 
 	final := agg.Process(lines)
 
